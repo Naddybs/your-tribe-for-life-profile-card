@@ -1,4 +1,7 @@
 /* In de global css zet ik de algemene styling van de website. */
 body{
-    background-color: pink;
+    background: linear-gradient(135deg, hsl(268deg 100% 23.16%) 20%, hsl(328,81% ,69%) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow-y: hidden;
 }
