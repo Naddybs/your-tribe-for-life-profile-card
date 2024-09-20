@@ -157,11 +157,23 @@ a{
 /* Vanaf ipad schermen layout aanpassen */
 @media (min-width: 600px){
   .sparkle{
-  display: block;
+    display: block;
     position: absolute;
     z-index: 1;
-    animation: sparkleAtom 7s infinite linear, s-y_bCXRrkrYfP-colorShift 2s infinite alternate ease-in-out;
+    animation: sparkleColorShift 2s infinite alternate ease-in-out;
     transform-origin: center;
+}
+
+@keyframes sparkleColorShift  {
+    0% {
+        filter: drop-shadow(0 0 5px #ff009d);
+    }
+    50% {
+        filter: drop-shadow(0 0 5px #38ecec);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #00ff2a);
+    }
 }
 
 .flower{
@@ -212,10 +224,10 @@ a{
         filter: drop-shadow(0 0 5px #ff009d); /* Voeg een rode gloed toe */
     }
     50% {
-        filter:  drop-shadow(0 0 5px #a051e6); /* Voeg een groene gloed toe */
+        filter:  drop-shadow(0 0 5px #5eecff); /* Voeg een groene gloed toe */
     }
     100% {
-        filter:   drop-shadow(0 0 5px #5d00ff); /* Voeg een blauwe gloed toe */
+        filter:   drop-shadow(0 0 5px #1eff00); /* Voeg een blauwe gloed toe */
     }
 }
 
